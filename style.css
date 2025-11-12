@@ -1,0 +1,131 @@
+body {
+  font-family: system-ui, Arial, sans-serif;
+  margin: 0;
+  padding: 2rem;
+  background-color: #f4f4f9; /* light gray-blue tone */
+  color: #0c0000;
+  line-height: 1.6;
+}
+
+header {
+  background: #2d3e60;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+section {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  border-bottom: 2px solid #2d3e50;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  color: #2d3e50;
+}
+
+ul {
+  list-style-type: square;
+  margin-left: 1.5rem;
+}
+
+a {
+  color: #c1c4c7;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background: #2d3e50;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.hero {
+  background: linear-gradient(to right, #2d89ef, #1e3c72);
+  color: white;
+  text-align: center;
+  padding: 5rem 1rem;
+}
+
+.hero .btn {
+  background: white;
+  color: #2d89ef;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s, color 0.3s;
+}
+
+.hero .btn:hover {
+  background: #010a14;
+  color: white;
+}
+
+#auth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+}
+
+.auth-container {
+  display: flex;
+  gap: 3rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem 3rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+
+.form-box h2 {
+  margin-bottom: 1rem;
+}
+
+.form-box input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 8px;
+}
+
+.form-box button {
+  background: #2d3e60;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.form-box button:hover {
+  background: #4a69bd;
+}

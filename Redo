@@ -1,0 +1,95 @@
+<section id="auth">
+  <div class="auth-container">
+    <div class="form-box" id="signup">
+      <h2>Sign Up</h2>
+      <form action="#" method="post">
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+
+    <div class="form-box" id="login">
+      <h2>Login</h2>
+      <form action="#" method="post">
+        <input type="email" placeholder="Email Address" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Olaide Oluwaseun | IT Engineer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Olaide Oluwaseun Adewale</h1>
+    <p>System Administrator | IT Support Engineer | DevOps Engineer</p>
+  </header>
+
+ <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I’m a dedicated and goal-oriented <strong>System Administrator</strong> with hands-on experience in IT infrastructure, cybersecurity, and networking.
+      I have a <strong>deep love for DevOps practices</strong>, which guide my approach to automation, system efficiency, and scalability.
+      Currently, I’m sharpening my <strong>Linux administration</strong> skills and exploring <strong>cloud technologies</strong> like Azure to help me deploy and manage applications effectively.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <ul>
+      <li><strong>System Administration:</strong> Linux & Windows Server, Virtualization, Google Workspace, Active Directory</li>
+      <li><strong>Networking:</strong> Routing (OSPF, BGP, EIGRP), VLANs, VPNs, Wireless PTP/PMP, Fortigate, Spanning Tree</li>
+      <li><strong>Cybersecurity:</strong> Security Operations, Threat Monitoring, Endpoint Security, Cloud Security</li>
+      <li><strong>DevOps & Cloud:</strong> CI/CD fundamentals, Automation mindset, Azure Fundamentals</li>
+    </ul>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <h3>System Administrator / IT Support Engineer – MIVA Open University (2023–Present)</h3>
+    <p>Managing daily IT operations, provisioning systems, and leading IT projects while ensuring reliable networks and services.</p>
+
+    <h3>Support Engineer / Cybersecurity Analyst Intern – ULesson Group (2022–2023)</h3>
+    <p>Investigated incidents, optimized processes, and conducted audits while staying updated on emerging cyber threats.</p>
+
+    <h3>ICT Technician – Jay FM (2021–2022)</h3>
+    <p>Oversaw installations, improved IT systems, provided technical support, and developed disaster recovery plans.</p>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li>CompTIA Security+ ce</li>
+      <li>Microsoft Azure Fundamentals</li>
+      <li>Microsoft Security Operations Analyst</li>
+      <li>Fortinet NSE 1 & 2</li>
+      <li>Cisco Cybersecurity Essentials, Cyber Threat Management</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:Laideadewale5@gmail.com">Laideadewale5@gmail.com</a></p>
+    <p>Phone: +234 906 673 3348</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/olaide-adewale1759/" target="_blank">linkedin.com/in/olaide-adewale1759</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Olaide Oluwaseun Adewale — Built with HTML & CSS, Deployed on AWS</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
