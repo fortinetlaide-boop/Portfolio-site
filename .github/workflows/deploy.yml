@@ -1,17 +1,24 @@
-name: Deploy to AWS
+name: Deploy to AWS EC2
 
 on:
   push:
     branches:
-      - master  # or main, depending on your repo branch
+      - master
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - name: Run simple test
-        run: echo "Deployment starting..."
+      - name: Deploy to AWS EC2
+        uses: appleboy/ssh-action@v0.1.10
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.PRIVATE_KEY }}
+          script: |
+            cd /var/www/html
+            git pull origin master
+            sudo systemctl restart nginx
