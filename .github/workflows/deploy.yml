@@ -22,5 +22,5 @@ jobs:
           key: ${{ secrets.EC2_PRIVATE_KEY }}
           script: |
             cd /var/www/html
-            git pull origin master
+            git pull origin main
             sudo systemctl restart nginx
