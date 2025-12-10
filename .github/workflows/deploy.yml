@@ -9,7 +9,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     env:
-      SSH_PRIVATE_KEY: ${{ secrets.EC2_PRIVATE_KEY_PRIVATE_KEY }}
+      SSH_PRIVATE_KEY: ${{ secrets.EC2_PRIVATE_KEY }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
