@@ -2,14 +2,14 @@ body {
   font-family: system-ui, Arial, sans-serif;
   margin: 0;
   padding: 2rem;
-  background-color: #acb6bbc6; /* light gray-blue tone */
+  background-color: #09547ac6; /* light gray-blue tone */
   color: #0c0000;
   line-height: 1.6;
 }
 
 header {
   background: #000000;
-  color: #fff;
+  color: #b19999;
   padding: 2rem;
   text-align: center;
 }
@@ -30,10 +30,10 @@ section {
 }
 
 h2 {
-  border-bottom: 2px solid #2d3e50;
+  border-bottom: 2px solid #222a33;
   padding-bottom: 0.5rem;
   margin-bottom: 1rem;
-  color: #2d3e50;
+  color: #0c3662;
 }
 
 ul {
@@ -42,7 +42,7 @@ ul {
 }
 
 a {
-  color: #c1c4c7;
+  color: #051320;
   text-decoration: none;
 }
 
@@ -118,7 +118,7 @@ footer {
 }
 
 .form-box button {
-  background: #2d3e60;
+  background: #36435d;
   color: #fff;
   border: none;
   padding: 10px 20px;
