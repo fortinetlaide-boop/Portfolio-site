@@ -8,8 +8,10 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    env:
+      SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
     steps:
-      - name: Checkout
+      - name: Checkout code
         uses: actions/checkout@v4
 
       - name: Deploy to AWS EC2
@@ -17,7 +19,7 @@ jobs:
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.PRIVATE_KEY }}
+          key: ${{ env.SSH_PRIVATE_KEY }}
           script: |
             cd /var/www/html
             git pull origin master
