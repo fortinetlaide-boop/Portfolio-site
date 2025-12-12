@@ -8,14 +8,13 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    env:
-      SSH_PRIVATE_KEY: ${{ secrets.EC2_PRIVATE_KEY }}
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
       - name: Deploy to AWS EC2
-        uses: appleboy/ssh-action@v0.1.10
+        uses: appleboy/ssh-action@v1.1.0
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
@@ -24,3 +23,4 @@ jobs:
             cd /var/www/html
             git pull origin main
             sudo systemctl restart nginx
+          port: 22
